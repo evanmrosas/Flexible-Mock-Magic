@@ -8,23 +8,24 @@
     background-color: #59D9A1;
     padding-left: 30px;
     padding-right: 10px;
+    justify-content: space-between;
 }
-  
+
 .logo {
     display: inline-block;
 }
-  
+
 .nav-links {
     list-style: none;
 }
-  
+
 .nav-item a {
     display: inline-block;
     padding: 10px 15px;
     text-decoration: none;
     color: white;
 }
-  
+
 .nav-item:hover {
     background-color: white;
 }
@@ -33,11 +34,11 @@
     background-color: white;
     color: #242457;
 }
-  
+
 .nav-item:hover a {
     color: #59D9A1;
 }
-  
+
 .logo img {
     width: 15%;
     vertical-align: middle;
@@ -47,6 +48,9 @@
     background-color: #242457;
     color: white;
     padding: 3rem;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
 }
 
 footer img {
@@ -66,7 +70,6 @@ footer img {
     margin: 2rem;
     color: #fff;
     border: solid black 1px;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -75,6 +78,13 @@ footer {
     width: 100%;
     padding: 1rem;
     background-color: #59D9A1;
+    justify-content: space-around;
 }
 
 /* CODE YOUR FLEXBOXES HERE */
+.main-content{
+    flex-wrap: wrap;
+}
+.main-content, .navbar, .nav-links, .sidebar, .flex-main, footer, .image-container{
+    display: flex;
+}
